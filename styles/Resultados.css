@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/fondo_scores.png');
+  background-size: cover;        /* 🔥 Cubre toda la pantalla sin distorsión */
+  background-position: center;   /* 🎯 Centra la imagen */
+  overflow: hidden; /* Oculta cualquier scroll innecesario */
+  font-family: "Concert One", serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;      /* 🧩 Apila el título y la tabla verticalmente */
+  align-items: center;         /* 🎯 Centra horizontalmente */
+}
+
+
+.table-container {
+  display: flex;
+  height: 100vh;
+  background-color: #e0f7fa; /* 💙 Fondo general azulado claro */
+}
+
+table {
+  width: 80%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #f0fcff; /* 🔵 Fondo blanco con toque azulado */
+  border-radius: 15px; /* 🎯 Bordes redondeados */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 🌟 Sombra suave */
+  font-size: 25px;
+}
+
+th, td {
+  padding: 16px;
+  text-align: center;
+  color: #333;
+}
+
+th {
+  background-color: #4fc3f7; /* 🔵 Azul claro para el encabezado */
+  color: white;
+letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: #e1f5fe; /* 💧 Azul muy claro para filas pares */
+}
+
+tr:hover {
+  background-color: #b3e5fc; /* 🔵 Azul al pasar el cursor */
+  transition: background-color 0.3s ease;
+}
+
+td:first-child {
+  border-radius: 15px 0 0 15px; /* 🎨 Bordes redondeados para la primera columna */
+}
+
+td:last-child {
+  border-radius: 0 15px 15px 0; /* 🎨 Bordes redondeados para la última columna */
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  min-width: 300px;
+  min-height: 60px;
+  font-size: 40px;
+  letter-spacing: 1.3px;
+  color: #000000;
+  background: #59b4ff;
+  background: linear-gradient(90deg, rgb(118, 198, 255) 0%, rgb(163, 199, 255) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 135, 209, 0.64);
+  margin-top: 30px; /* 🌊 Espacio superior para separar del contenido anterior */
+}
+
+
+.button:hover, .button:focus {
+  transform: translateY(-6px);
+}
+
+
+
+.title{
+  font-size: 80px;
+}

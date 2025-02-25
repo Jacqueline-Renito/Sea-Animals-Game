@@ -1,0 +1,100 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/fondo_name.png');
+  background-size: cover;        /* 🔥 Cubre toda la pantalla sin distorsión */
+  background-position: center;   /* 🎯 Centra la imagen */
+  overflow: hidden; /* Oculta cualquier scroll innecesario */
+  font-family: "Concert One", serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB; /* Mismo color que el body o transparente */
+    z-index: -1; /* Envía el canvas al fondo */
+  }
+
+  .title-name{
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+    color:rgb(0, 26, 131);
+    opacity: 0.7;
+    font-size: 70px;
+} 
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre input y botones */
+    height: 100vh;
+  }
+  
+  .lbl-nombre input {
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 20;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: "Concert One", serif;
+  }
+  
+.button-container {
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.button-container input{
+  font-family: "Concert One", serif;
+}
+
+.button-exit {
+    text-decoration: none;
+    text-align: center;
+    min-width: 300px;
+    margin-right: 40px;
+    min-height: 60px;
+    font-size: 40px;
+    letter-spacing: 1.3px;
+    color: #000000;
+    background: #d14f4f;
+    background: linear-gradient(90deg, red, rgb(209, 79, 79) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(255, 66, 66);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+
+.button-go {
+      text-decoration: none;
+      text-align: center;
+      min-width: 300px;
+      margin-right: 40px;
+      min-height: 60px;
+      font-size: 40px;
+      letter-spacing: 1.3px;
+      color: #000000;
+      background: #57cb51;
+      background: linear-gradient(90deg, yellowgreen, rgb(6, 171, 0) 100%);
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 24px green;
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+}
+

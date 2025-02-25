@@ -1,0 +1,134 @@
+body {
+    background-image: url(../images/fondo2.png);
+    background-size: 100%;
+    font-size: 50px;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Concert One", serif;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier scroll innecesario */
+}
+
+button {
+    border: transparent;
+    background: transparent;
+    width: 2vw;
+    height: 7vh;
+}
+
+.menu-superior {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Más espacio entre elementos */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    /* Padding más grande */
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+    /* Texto más grande */
+}
+
+.menu-superior button {
+    background: none;
+    border: none;
+    font-size: 36px;
+    /* Íconos más grandes */
+    cursor: pointer;
+}
+
+#cronometro,
+#puntos {
+    font-size: 28px;
+    /* Texto del cronómetro y puntaje más grande */
+    font-weight: bold;
+}
+
+#btnSonido:hover {
+    transform: scale(1.2); /* 🔍 Efecto de agrandado al pasar el cursor */
+  }
+
+  .mensaje-error {
+    position: fixed;
+    bottom: 20px;                /* ⬇️ Posición en la parte inferior */
+    right: 20px;                 /* ➡️ Posición a la derecha */
+    background-color: #ffdddd;   /* 🔴 Fondo suave de error */
+    color: #d32f2f;              /* 🔴 Texto rojo */
+    border: 1px solid #d32f2f;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    font-size: 18px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s;
+    transform: translateX(100%);
+    z-index: 100;
+  }
+  
+  /* 🌙 Fondo oscuro translúcido */
+.modal {
+    display: none;                 /* 🔒 Oculto por defecto */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* 🔲 Fondo oscuro translúcido */
+  }
+  
+  /* 📝 Contenido del cuadro de instrucciones */
+  .modal-content {
+    background-color: #f0fcff;      /* 💙 Fondo claro con toque azulado */
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+   max-width: 500px;
+   max-height: 500px;               /* 🚫 Límite máximo de ancho */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease;
+    display: flex;                  /* 🎯 Flexbox para centrar el contenido */
+    flex-direction: column;
+    justify-content: center;        /* ⬆️⬇️ Centra el contenido verticalmente */
+  }
+  
+  /* 📱 Ajuste responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 80%;
+      height: 50vh;
+    }
+  }
+  
+  
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ❌ Botón para cerrar el modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  

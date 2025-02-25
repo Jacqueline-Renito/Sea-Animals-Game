@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Sea Animals Game</title>
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles/name-styles.css" />
+  <link rel="shortcut icon" href="images/favincon.webp">
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <h1 class="title-name">Enter your name! 🌟</h1>
+  <form id="formName" class="wrap">
+    <label class="lbl-nombre">
+      <input id="idName" class="enterName" type="text">
+    </label>
+    <div class="button-container">
+      <input type="button" class="button-exit" value="Exit" onclick="window.location.href='index.html'">
+      <input id="btnPlay" type="button" class="button-go" value="Play">
+    </div>
+  </form>
+</body>
+
+<script src="js/bubblesAnimation.js"></script>
+<script src="js/addPlayer.js"></script>
+
+</html>

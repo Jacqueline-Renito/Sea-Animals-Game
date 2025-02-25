@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/game.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title> Mar </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/favincon.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="Carga()" class="body-img">
+  <section>
+    <div id="imagenes"></div>
+    <div id="arrastrables"></div>
+    <div id="cajas"></div>
+  </section>
+
+  <div class="menu-superior">
+    <button id="btnInicio" title="Volver al inicio">🏠</button>
+    <button id="btnAudio" title="Activar/Desactivar sonido">🔊</button>
+    <div id="cronometro">⏱️ 00:00</div>
+    <div id="puntos">⭐ Score: 0</div>
+    <button id="btnInstrucciones" title="Instructions">❓</button>
+  </div>
+<!-- Cuadro modal de instrucciones -->
+<div id="modalInstrucciones" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>📝 How to Play</h2>
+    <p>👉 Drag the correct name to match the sea animal!</p>
+    <p>🎯 You'll get 100 points if you get it right, otherwise you'll lose 50.</p>
+    <p>🔊 When you match correctly, you will hear the animal sound.</p>
+    <p>⏱️ Try to finish as fast as you can!</p>
+  </div>
+</div>
+  <div id="mensajeError" class="mensaje-error"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/Agregar.js"></script>
+</body>
+
+</html>
